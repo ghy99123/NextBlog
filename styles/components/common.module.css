@@ -1,0 +1,23 @@
+.commonMain {
+  margin-top: 0rem;
+  padding-top: 1rem;
+}
+
+.commonLeft {
+  
+}
+
+.commonRight {
+  margin-left: .5rem;
+}
+
+.commonBox {
+  background-color: #fff;
+  padding: .3rem;
+  border-radius: .5rem;
+  border-bottom:1px solid #eee;
+}
+
+.indexBox {
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1), 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
+}

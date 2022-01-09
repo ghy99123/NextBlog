@@ -1,0 +1,31 @@
+.container {
+  background-color: #fff;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #444;
+  padding-top: 3.5rem;
+}
+
+.subTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.postDate {
+  font-style: italic;
+  color: #97979b;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.content {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 1rem;
+}
+
+

@@ -1,0 +1,43 @@
+.container {
+  padding: 0 .7rem;
+}
+
+.item{
+  padding: 1rem 0;
+}
+
+.title {
+  color: #353b48;
+}
+
+.title:hover {
+  cursor: pointer;
+  color: #2980b9;
+}
+
+.mainTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.subTitle {
+  margin: .5rem;
+  font-weight: 600;
+}
+
+.content {
+  margin-top: .7rem;
+  color: #97979b;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+.footer {
+  margin-top: .5rem;
+  font-style: italic;
+  color: #97979b
+}
+
+.listContainer {
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1), 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+  position: fixed;
+  height: 2.8rem;
+  padding: 0 .9rem;
+  background-color: rgba(255,255,255,.8) ;
+  z-index: 100;
+}
+
+.headerFixed {
+  transition: transform .5s;
+  transform: translate3d(0,100%,0);
+  top: -2.9rem;
+}
+
+.headerInvisible {
+  top: -2.9rem;
+  transition: transform .5s;
+}
+
+.logo {
+  color: #2980b9;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.logo:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.menuDiv {
+
+}
+
+.menu {
+  font-size: 1.1rem;
+  justify-content: flex-end;
+  border: none;
+  background: rgba(255,255,255,0) !important;
+  /* transform: translate3d(0,100%,0); */
+}
+
+.menuItem {
+  color: #999;
+}
+
