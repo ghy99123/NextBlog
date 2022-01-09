@@ -32,10 +32,11 @@ export default function Notes({blogArticles}) {
   )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res = await fetch(urls.articles + '?type=life')
   const blogArticles = await res.json()
   return {
-    props: { blogArticles }
+    props: { blogArticles },
+    revalidate: 300
   }
 }

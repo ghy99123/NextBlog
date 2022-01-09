@@ -38,20 +38,20 @@ export default function Detailed({post}) {
 }
 
 
-// export async function getStaticPaths() {
-//   const res = await fetch(urls.articles)
-//   const posts = await res.json()
-//   const paths = posts.map((post) => ({
-//     params: {id: post.id.toString()}
-//   }))
-//   return {
-//     paths,
-//     fallback: false 
-//   }
-// }
+export async function getStaticPaths() {
+  const res = await fetch(urls.articles)
+  const posts = await res.json()
+  const paths = posts.map((post) => ({
+    params: {id: post.id.toString()}
+  }))
+  return {
+    paths,
+    fallback: false 
+  }
+}
 
-export const getServerSideProps = async (context) => {
-  const id = context.params.id
+export const getStaticProps = async ({params}) => {
+  const id = params.id
   const res = await fetch(urls.article + id)
   const post = await res.json()
   return {

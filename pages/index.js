@@ -37,10 +37,11 @@ export default function Home({ blogArticles }) {
 }
 
 //获取所有笔记
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res = await fetch(urls.articles)
   const blogArticles = await res.json()
   return {
-    props: { blogArticles }
+    props: { blogArticles },
+    revalidate: 300
   }
 }
