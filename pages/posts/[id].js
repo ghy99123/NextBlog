@@ -1,7 +1,7 @@
 import React from 'react'
-import Head from 'next/head'
 import { Row, Col } from 'antd'
 import Header from '../../components/Header'
+import HTMLHead from '../../components/HTMLHead'
 import Footer from '../../components/footer'
 import Catalog from '../../components/Catalog'
 import BlogContent from '../../components/BlogContent'
@@ -16,9 +16,7 @@ export default function Detailed({post}) {
   
   return (
     <>
-      <Head>
-        <title>{title} - 高翰熠的博客</title>
-      </Head>
+      <HTMLHead title={`${title} - 高翰熠的博客`} description={`${title} - 高翰熠的博客`} />
       <Header />
       <Row className={`${CommonStyle.commonMain} ${PageStyle.container}`}
         type='flex' justify='center'>
