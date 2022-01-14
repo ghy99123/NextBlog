@@ -1,7 +1,7 @@
 import React from 'react'
 import { marked } from 'marked'
 import hljs from "highlight.js"
-import 'highlight.js/styles/monokai-sublime.css'
+import 'highlight.js/styles/gml.css'
 import PageStyle from '../styles/pages/detailed.module.css'
 
 marked.setOptions({
@@ -12,7 +12,7 @@ marked.setOptions({
   tables: true,
   breaks: false,
   smartLists: true,
-  smartypants: false,
+  smartypants: true, 
   highlight: function (code) {
     return hljs.highlightAuto(code).value
   }

@@ -26,6 +26,24 @@
   margin-top: 3rem;
   padding-bottom: 2rem;
   font-size: 1rem;
+  word-wrap: break-word;
+}
+
+.content pre {
+  padding: .5rem;
+  background-color: #313944 !important;
+  border-radius: .4rem;
+}
+
+.content pre>code {
+  color: #ddd;
+}
+
+.content blockquote {
+  border-left:4px solid #cbcbcb ;
+  padding: 5px 10px 1px 15px; 
+  background-color: #f8f6f6;
+  color: #8d8c8c;
 }
 
 
