@@ -11,6 +11,7 @@ export default function Introheader(props) {
         layout='fill'
         alt='Backgroud Image'
         src={src}
+        priority
       />
       <div className={Style.container}>
         <h3 className={Style.title}>{title}</h3>
