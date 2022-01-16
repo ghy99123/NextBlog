@@ -12,6 +12,7 @@ export default class Catalog extends Component {
           <MarkdownNavbar
             className={Style.content}
             source={markdown}
+            updateHashAuto={false}
             ordered={false}
           />
         </div>
