@@ -1,6 +1,6 @@
 import React from 'react'
 import { Avatar, Divider } from 'antd'
-import { UserOutlined, GithubFilled } from '@ant-design/icons';
+import { GithubFilled } from '@ant-design/icons';
 import { AVATAR } from '../static/img/imgs';
 import authorStyle from '../styles/components/Author.module.css'
 import commonStyle from '../styles/components/common.module.css'
