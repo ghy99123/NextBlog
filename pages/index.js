@@ -9,6 +9,7 @@ import Author from '../components/Author'
 import BlogList from '../components/BlogList'
 import commonStyle from '../styles/components/common.module.css'
 import { urls } from '../utils/urls'
+import Clock from '../components/Clock/Clock'
 
 export default function Home({ blogArticles }) {
   const info = { title: 'Blog', subtitle: 'Giving is a reward in itself.' }
@@ -22,8 +23,11 @@ export default function Home({ blogArticles }) {
           <Col className={`${commonStyle.commonBox} ${commonStyle.indexBox}`} xs={23} sm={23} md={17} lg={18} xl={15}  >
             <BlogList blogArticles={blogArticles} />
           </Col>
-          <Col xs={0} sm={0} md={6} lg={5} xl={4}>
-            <Author />
+          <Col xs={0} sm={0} md={6} lg={5} xl={4} >
+            <Row gutter={[0, 8]}>
+              <Clock />
+              <Author />
+            </Row>
           </Col>
         </Row>
       </main>
